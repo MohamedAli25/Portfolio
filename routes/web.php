@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home_page');
+});
+
+
+Route::get('/portfolio-website/home', function () {
+    return view('portfolio_website/index');
+});
+Route::get('/portfolio-website/about', function () {
+    return view('portfolio_website/about');
+});
+Route::get('/portfolio-website/work', function () {
+    return view('portfolio_website/work');
+});
+Route::get('/portfolio-website/contact', function () {
+    return view('portfolio_website/contact');
 });
